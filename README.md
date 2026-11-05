@@ -1,6 +1,8 @@
 # encrypt
 
-this is a rewrite of [encrypt(1)](https://www.illumos.org/man/1/encrypt), [decrypt(1)](https://www.illumos.org/man/1/decrypt) and [digest(1)](https://www.illumos.org/man/1/digest) from illumos.
+this is a unfaithful rewrite of [encrypt(1)](https://www.illumos.org/man/1/encrypt), [decrypt(1)](https://www.illumos.org/man/1/decrypt) and [digest(1)](https://www.illumos.org/man/1/digest) from illumos.
+
+it's supposed to be similar to the original tools, but you should expect major incompatibilities and major differences.
 
 ## Differences
 
