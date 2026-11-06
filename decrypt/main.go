@@ -137,7 +137,10 @@ chacha20: 256`)
 	var key []byte
 
 	if keyfile == "" {
-		p1 := shared.GetPass("Password: ")
+		p1, err := shared.GetPass("Password: ")
+		if err != nil {
+			log.Fatal(err)
+		}
 
 		salt := make([]byte, 16)
 		f.Read(salt)

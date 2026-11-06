@@ -148,8 +148,14 @@ chacha20: 256`)
 	var key []byte
 
 	if keyfile == "" {
-		p1 := shared.GetPass("Password: ")
-		p2 := shared.GetPass("Confirm Password: ")
+		p1, err := shared.GetPass("Password: ")
+		if err != nil {
+			log.Fatal(err)
+		}
+		p2, err := shared.GetPass("Confirm Password: ")
+		if err != nil {
+			log.Fatal(err)
+		}
 
 		if bytes.Equal(p1, p2) {
 			key, salt = shared.DeriveKeysPassword(string(p1), nil)
