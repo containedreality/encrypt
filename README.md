@@ -34,7 +34,7 @@ The following algorithms have been added:
 
 All ciphers are used with 256 bit keys when with a password.
 
-Because all the ciphers use 256 bit keys now, DES and 3DES have been removed.
+Because all the ciphers use 256 bit keys now with when a key is derived from a password, DES and 3DES have been removed. For I don't want to deal with changing the key length parameter in Argon2 for each cipher.
 
 `-T` and `-K` is missing for I have no clue what they do.
 
